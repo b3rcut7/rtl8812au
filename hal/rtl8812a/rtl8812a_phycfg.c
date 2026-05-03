@@ -39,7 +39,7 @@ int transmit_power_boost = 2;
 // Transmit Power Override
 // This value completely overrides the driver's calculations and uses only one value for all transmissions.
 // Zero disables it. Default: 0
-int transmit_power_override = 0;
+extern int rtw_tx_pwr_idx_override;
 
 /* Manual Transmit Power Control */
 
