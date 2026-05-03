@@ -1252,7 +1252,7 @@ u8 rtw_mi_buddy_set_tx_beacon_cmd(_adapter *padapter)
 static u8 _rtw_mi_p2p_chk_state(_adapter *adapter, void *data)
 {
 	struct wifidirect_info *pwdinfo = &(adapter->wdinfo);
-	enum P2P_STATE state = *(enum P2P_STATE *)data;
+	enum P2P_STATE state = (enum P2P_STATE)(*(u8 *)data);
 
 	return rtw_p2p_chk_state(pwdinfo, state);
 }
